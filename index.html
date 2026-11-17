@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You ❤️</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =====================================
+         PASSWORD SCREEN
+    ====================================== -->
+
+    <section class="password-screen" id="passwordScreen">
+
+        <div class="password-box">
+
+            <div class="lock-icon">
+                🔐
+            </div>
+
+            <p class="mini-title">
+                A little secret...
+            </p>
+
+            <h1>
+                This is just for you ❤️
+            </h1>
+
+            <p class="password-description">
+                Enter the secret password to open your birthday gift.
+            </p>
+
+            <form id="passwordForm">
+
+                <input
+                    type="password"
+                    id="passwordInput"
+                    placeholder="Enter password..."
+                    autocomplete="off"
+                >
+
+                <button type="submit">
+                    Unlock My Gift 🔓
+                </button>
+
+            </form>
+
+            <p class="error-message" id="passwordError">
+                Wrong password. Try again ❤️
+            </p>
+
+            <!-- CHANGE PASSWORD HINT HERE -->
+
+            <p class="hint">
+                Hint: A special date...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <section class="hero hidden" id="hero">
+
+        <div class="hero-content">
+
+            <div class="sparkles">
+                ✨
+            </div>
+
+            <p class="small-title">
+                I made something special for you
+            </p>
+
+            <!-- CHANGE NAME -->
+
+            <h1>
+                Happy Birthday,
+                <span> Habibiiiiiiiiiiiiiii❤️❤️</span>
+                ❤️
+            </h1>
+
+            <p class="hero-text">
+                This isn't just a website.
+                It's a little collection of memories,
+                words and feelings made especially for you.
+            </p>
+
+            <button id="openGiftButton" class="main-button gift-button" type="button">
+                  Open Your Gift 🎁
+             </button>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================
+         MAIN WEBSITE
+    ====================================== -->
+
+    <main id="mainContent" class="hidden">
+
+
+        <!-- MUSIC BUTTON -->
+
+        <button class="music-button" id="musicButton">
+            🎵
+        </button>
+
+        <audio id="backgroundMusic" loop>
+            <source src="music/Hob Omry - Ramy Sabry _ حب عمرى - رامى صبرى.mp3" type="audio/mpeg">
+        </audio>
+
+
+        <!-- =================================
+             COUNTDOWN
+        ================================== -->
+
+        <section class="countdown-section">
+
+            <div class="section-title">
+
+                <p>
+                    The Special Day
+                </p>
+
+                <h2 id="countdownTitle">
+                    Counting Down To Your Birthday 🎂
+                </h2>
+
+            </div>
+
+
+            <div class="countdown">
+
+                <div class="count-box">
+                    <span id="days">00</span>
+                    <small>Days</small>
+                </div>
+
+                <div class="count-box">
+                    <span id="hours">00</span>
+                    <small>Hours</small>
+                </div>
+
+                <div class="count-box">
+                    <span id="minutes">00</span>
+                    <small>Minutes</small>
+                </div>
+
+                <div class="count-box">
+                    <span id="seconds">00</span>
+                    <small>Seconds</small>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             TYPEWRITER MESSAGE
+        ================================== -->
+
+        <section class="message-section">
+
+            <div class="section-title">
+
+                <p>
+                    From My Heart
+                </p>
+
+                <h2>
+                    A Message For You 💌
+                </h2>
+
+            </div>
+
+
+            <div class="letter">
+
+                <div class="letter-top">
+                    💌
+                </div>
+
+                <p id="typewriterText"></p>
+
+                <span class="cursor">
+                    |
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             PHOTO GALLERY
+        ================================== -->
+
+        <section class="gallery-section">
+
+            <div class="section-title">
+
+                <p>
+                    Our Memories
+                </p>
+
+                <h2>
+                    Moments I Want To Remember 📸
+                </h2>
+
+            </div>
+
+
+            <div class="gallery">
+
+                <div class="photo-card">
+
+                    <img src="photo/1.jpeg" alt="Memory 1">
+
+                    <div class="photo-info">
+
+                        <span>
+                            Memory #1
+                        </span>
+
+                        <h3>
+                            Our First Memory
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo/2 (2).jpeg" alt="Memory 2">
+
+                    <div class="photo-info">
+
+                        <span>
+                            Memory #2
+                        </span>
+
+                        <h3>
+                            A Beautiful Day
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo/3.jpeg" alt="Memory 3">
+
+                    <div class="photo-info">
+
+                        <span>
+                            Memory #3
+                        </span>
+
+                        <h3>
+                            One Of My Favorites
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo/4.jpeg" alt="Memory 4">
+
+                    <div class="photo-info">
+
+                        <span>
+                            Memory #4
+                        </span>
+
+                        <h3>
+                            That Beautiful Moment
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo/5.jpeg" alt="Memory 5">
+
+                    <div class="photo-info">
+
+                        <span>
+                            Memory #5
+                        </span>
+
+                        <h3>
+                            Another Favorite
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <div class="photo-card">
+
+                    <img src="photo/6.jpeg" alt="Memory 6">
+
+                    <div class="photo-info">
+
+                        <span>
+                            Memory #6
+                        </span>
+
+                        <h3>
+                            A Memory Forever
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             TIMELINE
+        ================================== -->
+
+        <section class="timeline-section">
+
+            <div class="section-title">
+
+                <p>
+                    Our Story
+                </p>
+
+                <h2>
+                    Little Moments, Big Memories ❤️
+                </h2>
+
+            </div>
+
+
+            <div class="timeline">
+
+
+                <!-- TIMELINE ITEM 1 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        ❤️
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span>
+                            19 Sep 2026
+                        </span>
+
+                        <h3>
+                            The Beginning
+                        </h3>
+
+                        <p>
+                           The day we first talk ❤️
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIMELINE ITEM 2 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        ✨
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span>
+                            5 oct 2025
+                        </span>
+
+                        <h3>
+                            A Special Memory
+                        </h3>
+
+                        <p>
+                           the first time I said "I LOVE YOU" ❤️❤️
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIMELINE ITEM 3 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        🌷
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span>
+                            22 Nov 2025
+                        </span>
+
+                        <h3>
+                            Another Beautiful Day
+                        </h3>
+
+                        <p>
+                           your first birthday with me❤️
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TIMELINE ITEM 4 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot">
+                        💕
+                    </div>
+
+                    <div class="timeline-card">
+
+                        <span>
+                            &infin;❤️
+                        </span>
+
+                        <h3>
+                            A Memory I Love
+                        </h3>
+
+                        <p>
+                            every moment with you is a memory I will cherish forever ❤️
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+<section class="video-section">
+
+    <div class="section-title">
+        <p>A Little Surprise</p>
+        <h2>Something For You 🎬</h2>
+    </div>
+
+    <div class="video-wrapper">
+        <video id="giftVideo" controls playsinline preload="metadata">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+</section>
+
+        <!-- =================================
+             REASONS
+        ================================== -->
+
+        <section class="reasons-section">
+
+            <div class="section-title">
+
+                <p>
+                    Just Because...
+                </p>
+
+                <h2>
+                    Why You're Special ❤️
+                </h2>
+
+            </div>
+
+
+            <div class="reasons">
+
+
+                <div class="reason-card">
+
+                    <div>
+                        ❤️
+                    </div>
+
+                    <h3>
+                        Your Smile
+                    </h3>
+
+                    <p>
+                        Your smile literally flips my whole day upside down.
+                    </p>
+
+                </div>
+
+
+                <div class="reason-card">
+
+                    <div>
+                        ✨
+                    </div>
+
+                    <h3>
+                        Your Personality
+                    </h3>
+
+                    <p>
+                       There's just something about you... you can't be replaced.
+                    </p>
+
+                </div>
+
+
+                <div class="reason-card">
+
+                    <div>
+                        🌷
+                    </div>
+
+                    <h3>
+                        Your Heart
+                    </h3>
+
+                    <p>
+                        You’ve got the kindest heart, and I’m just real lucky to have youe.
+                    </p>
+
+                </div>
+
+
+                <div class="reason-card">
+
+                    <div>
+                        🌙
+                    </div>
+
+                    <h3>
+                        Simply You
+                    </h3>
+
+                    <p>
+                        You don't even have to try, you're just awesome as you are.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             FINAL
+        ================================== -->
+
+        <section class="final-section">
+
+            <div class="final-content">
+
+                <div class="cake">
+                    🎂
+                </div>
+
+                <p>
+                    And finally...
+                </p>
+
+                <h2>
+                    Happy Birthday
+                </h2>
+
+                <!-- CHANGE NAME -->
+
+                <h1>
+                    Nodyyyyyy
+                </h1>
+
+                <p class="final-message">
+                    I hope this year gives you
+                    countless reasons to smile,
+                    beautiful memories to keep,
+                    and everything your heart wishes for.
+                </p>
+
+                <div class="big-heart">
+                    ♥
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                Made with ❤️ especially for you
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <div class="hearts" id="hearts"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
